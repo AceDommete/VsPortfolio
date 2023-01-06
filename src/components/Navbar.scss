@@ -36,24 +36,36 @@
         height: 18px;
         margin-left: 8px;
     }
-}
-
-
-// logo-nav{
-//     position: relative;
-//     width: 16px;
-//     height: 15px;
-//     margin-top: 7px;
-//     left: 6px;
-// }
-
-.nav-items-static{
-    color: #bfbdb6;
-    font-family: Roboto;
-    font-size: 14px;
-    display: inline-block;
-    margin-left: 8px;
-    position: relative;
-    left: 35px;
-    top: -21px;
-}
+    span{
+        color: #bfbdb6;
+        font-family: Noto Sans;
+        position: relative;
+        left: 150px;
+        font-size: small;
+        font-weight: 400;
+    }
+    .circleYellow{
+        height: 14px;
+        width: 14px;
+        background-color: #ffbd2e;
+        border-radius: 50%;
+        position: relative;
+        left: 766px;
+    }
+    .circleRed{
+        height: 14px;
+        width: 14px;
+        background-color: #ff5f56;
+        border-radius: 50%;
+        position: relative;
+        left: 760px;
+    }
+    .circleGreen{
+        height: 14px;
+        width: 14px;
+        background-color: #27c93f;
+        border-radius: 50%;
+        position: relative;
+        left: 730px;
+    }
+} 
