@@ -9,9 +9,11 @@
     height: 30px;
     position: absolute;
     border-bottom: 1px solid #191d20;
-    background-color: #1f2428;
+    background-color: #1f2430;
     display: flex;
     align-items: center;
+    z-index: 100;
+    overflow-x: hidden;
     p{
         color: #bfbdb6;
         font-family: Roboto;
@@ -22,13 +24,13 @@
         left: 0px;
         top: 0px;
         cursor: default;
+        padding: 4px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background-color: #1f2430;
         &:hover{
             background-color: #31363e;
             border-radius: 4px;
-
-            padding-left: 0px;
-            padding-top: 3px;
-            padding-bottom: 3px;
         }
     }
     img{
@@ -50,7 +52,8 @@
         background-color: #ffbd2e;
         border-radius: 50%;
         position: relative;
-        left: 766px;
+        left: 710px;
+        cursor: pointer;
     }
     .circleRed{
         height: 14px;
@@ -58,7 +61,8 @@
         background-color: #ff5f56;
         border-radius: 50%;
         position: relative;
-        left: 760px;
+        left: 656px;
+        cursor: pointer;
     }
     .circleGreen{
         height: 14px;
@@ -66,6 +70,92 @@
         background-color: #27c93f;
         border-radius: 50%;
         position: relative;
-        left: 730px;
+        left: 720px;
+        cursor: pointer;
     }
 } 
+@media only screen and (max-width: 600px) {
+    .Navbar{
+        .filenav{
+            display: none;
+        }
+        .editnav{
+            display: none;
+        }
+        .viewnav{
+            display: none;
+        }
+        .gonav{
+            display: none;
+        }
+        .runnav{
+            display: none;
+        }
+        .terminalnav{
+            display: none;
+        }
+        .helpnav{
+            display: none;
+        }
+        #center-nav{
+            left: 70px;
+        }
+        .circleYellow{
+            left: 120px;
+        }
+        .circleRed{
+            left: 72px;
+        }
+        .circleGreen{
+            left: 125px;
+        }
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .Navbar{
+        #center-nav{
+            left: 50px;
+        }
+        .circleYellow{
+            left: 140px;
+        }
+        .circleRed{
+            left: 85px;
+        }
+        .circleGreen{
+            left: 150px;
+        }
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .Navbar{
+        #center-nav{
+            left: 60px;
+        }
+        .circleYellow{
+            left: 105px;
+        }
+        .circleRed{
+            left: 55px;
+        }
+        .circleGreen{
+            left: 115px;
+        }
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .Navbar{
+        #center-nav{
+            left: 65px;
+        }
+        .circleYellow{
+            left: 132px;
+        }
+        .circleRed{
+            left: 80px;
+        }
+        .circleGreen{
+            left: 140px;
+        }
+    }
+  }

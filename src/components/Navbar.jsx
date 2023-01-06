@@ -4,13 +4,13 @@ function Navbar() {
   return (
     <div className='Navbar'>
         <a href="/"><img src="./favicon.png" alt="" id='logo-nav'/></a>
-            <p>File</p>
-            <p>Edit</p>
-            <p>View</p>
-            <p>Go</p>
-            <p>Run</p>
-            <p>Terminal</p>
-            <p>Help</p>
+            <p className='filenav'>File</p>
+            <p className='editnav'>Edit</p>
+            <p className='viewnav'>View</p>
+            <p className='gonav'>Go</p>
+            <p className='runnav'>Run</p>
+            <p className='terminalnav'>Terminal</p>
+            <p className='helpnav'>Help</p>
             <span id='center-nav'>Neek Kafle - Visual Studio Code</span>
             <span className="circleYellow"></span>
             <span className="circleGreen"></span>

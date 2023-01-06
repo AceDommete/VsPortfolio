@@ -1,3 +1,607 @@
-svg{
-    color: white;
+.Sidebar{
+    width: 50px;
+    height: 100vh;
+    background-color: #1f2430;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #191d20;
 }
+
+.logoaccountsidebar{
+    width: 50px;
+    height: 50px;
+    top: 575px;
+    // top: 530px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    // border-left: 2.5px solid #ffcc66;
+    cursor: pointer;
+    .sidebaraccountlogo{
+        color: #4c5463;
+        &:hover{
+            color: #586170;
+        }
+    }
+}
+.logosettingsidebar{
+    width: 50px;
+    height: 50px;
+    top: 565px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    left: 0;
+    align-items: flex-end;
+    justify-content: center;
+    // border-left: 2.5px solid #ffcc66;
+    cursor: pointer;
+    .sidebarsettinglogo{
+        color: #4c5463;
+        &:hover{
+            color: #586170;
+        }
+    }
+}
+
+
+.logofilessidebar{
+    width: 50px;
+    height: 50px;
+    top: -70px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .sidebarfilelogo{
+        color: #4c5463;
+        &:hover{
+            color: #586170;
+        }
+    }
+}
+.logofilessidebar-active{
+    width: 50px;
+    height: 50px;
+    top: -70px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid #ffcc66;
+    cursor: pointer;
+    .sidebarfilelogo{
+        color: #586170;
+        &:hover{
+            color: #586170;
+        }
+    }
+}
+
+.logogithubsidebar{
+    width: 50px;
+    height: 50px;
+    top: -70px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .sidebargithublogo{
+        color: #4c5463;
+        &:hover{
+            color: #586170;
+        }
+
+    }
+}
+
+.logogithubsidebar-active{
+    width: 50px;
+    height: 50px;
+    top: -70px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-left: 2px solid #ffcc66;
+    .sidebargithublogo{
+        color: #586170;
+        &:hover{
+            color: #586170;
+        }
+
+    }
+}
+
+.logocodesidebar{
+    width: 50px;
+    height: 50px;
+    top: -70px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .sidebarcodelogo{
+        color: #4c5463;
+        &:hover{
+            color: #586170;
+        }
+
+    }
+}
+
+.logocodesidebar-active{
+    width: 50px;
+    height: 50px;
+    top: -70px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-left: 2px solid #ffcc66;
+    .sidebarcodelogo{
+        color: #586170;
+        &:hover{
+            color: #586170;
+        }
+
+    }
+}
+.logosocialsidebar{
+    width: 50px;
+    height: 50px;
+    top: -70px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .sidebarsociallogo{
+        color: #4c5463;
+        &:hover{
+            color: #586170;
+        }
+
+    }
+}
+
+.logosocialsidebar-active{
+    width: 50px;
+    height: 50px;
+    top: -70px;
+    position: relative;
+    background-color: #1f2430;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-left: 2px solid #ffcc66;
+    .sidebarsociallogo{
+        color: #586170;
+        &:hover{
+            color: #586170;
+        }
+
+    }
+}
+
+.sidebarss{
+    position: absolute;
+    height: 100vh;
+    width: 230px;
+    background-color: #1f2430;
+    z-index: 10;
+    top: 0;
+    left: 50px;
+    border-right: 1px solid #191d20;
+    .explorer{
+        color: #707a8c;
+        position: relative;
+        top: 40px;
+        left: 30px;
+        width: 100px;
+        background-color: #1f2430;
+        font-family: roboto;
+        font-size: 11.2px;
+    }
+
+    .explorerrotateicon{
+        color: #63645f;
+        position: relative;
+        top: 4px;
+        left: -2.5px;
+        cursor: pointer;
+        transition: .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .explorerrotateicon-active{
+        color: #63645f;
+        position: relative;
+        top: 4px;
+        left: -2.5px;
+        cursor: pointer;
+        transform: rotate(-90deg);
+        transition: .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .explorerfoldername{
+        color: #707a8c;
+        font-family: poppins;
+        position: relative;
+        top: 45px;
+        font-size: 14px;
+        margin-left: 11px;
+        cursor: pointer;
+    }
+}
+.sidebarss-hidden{
+    display: none;
+}
+
+.dotsexp{
+    position: relative;
+    top: 0px;
+    left: 110px;
+    padding: 2px;
+    &:hover{
+        background-color: #31363e;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.files{
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+.files-hide{
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+.homejsx{
+    p{
+        color: #d7b56d;
+        font-size: 14px;
+        font-family: Roboto;
+        // background-color: #282e3b;
+        padding-bottom: 3.5px;
+        border-radius: 2px;
+        padding-top: 5px;
+        padding-left: 20px;
+        &:hover{
+            background-color: #282e3b;
+        }
+    }
+    .reacticon{
+        position: relative;
+        top:1px;
+        &:hover{
+        background-color: #282e3b;
+        }
+    }
+    position: relative;
+    top: 45px;
+    cursor: pointer;
+}
+.abouthtml{
+    p{
+        color: #5694bc;
+        font-size: 14px;
+        font-family: Roboto;
+        padding-bottom: 3.5px;
+        padding-top: 5px;
+        padding-left: 20px;
+        &:hover{
+            background-color: #282e3b;
+            }
+    }
+    .htmlicon{
+        position: relative;
+        top:1px;
+        &:hover{
+            background-color: #282e3b;
+            }
+    }
+    position: relative;
+    top: 45px;
+    cursor: pointer;
+}
+.contactcss{
+    p{
+        color: #ff9cac;
+        font-size: 14px;
+        font-family: Roboto;
+        padding-bottom: 3.5px;
+        padding-top: 5px;
+        padding-left: 20px;
+        &:hover{
+            background-color: #282e3b;
+            }
+    }
+    .cssicon{
+        position: relative;
+        top:1px;
+        &:hover{
+            background-color: #282e3b;
+            }
+    }
+    position: relative;
+    top: 45px;
+    cursor: pointer;
+}
+.projectjs{
+    p{
+        color: #80cbc4;
+        font-size: 14px;
+        font-family: Roboto;
+        padding-bottom: 3.5px;
+        padding-top: 5px;
+        padding-left: 20px;
+        &:hover{
+            background-color: #282e3b;
+            }
+    }
+    .jsicon{
+        position: relative;
+        top:1px;
+        &:hover{
+            background-color: #282e3b;
+            }
+    }
+    position: relative;
+    top: 45px;
+    cursor: pointer;
+}
+
+.githubmd{
+    p{
+        color: #707a8c;
+        font-size: 14px;
+        font-family: Roboto;
+        padding-bottom: 3.5px;
+        padding-top: 5px;
+        padding-left: 20px;
+        &:hover{
+            background-color: #282e3b;
+            }
+    }
+    .mdicon{
+        position: relative;
+        top:1px;
+        &:hover{
+            background-color: #282e3b;
+            }
+    }
+    position: relative;
+    top: 27px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebarss{
+        display: none;
+    }
+    .logoaccountsidebar{
+        top: 540px;
+        left: 0px;
+        width: 35px;
+    }
+    .logosettingsidebar{
+        top: 540px;
+        left: 0px;
+        width: 35px;
+    }
+    .Sidebar{
+        width: 40px;
+
+    }
+    .logofilessidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logogithubsidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logocodesidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logosocialsidebar{
+        left: 0px;
+        width: 35px;
+    }
+  }
+@media only screen and (max-width: 1100px) {
+    .sidebarss{
+        width: 200px;
+    }
+    .dotsexp{
+        left: 90px;
+    }
+    .logoaccountsidebar{
+        top: 1049px;
+        left: 0px;
+        width: 42px;
+    }
+    .logosettingsidebar{
+        top: 1050px;
+        left: 0px;
+        width: 42px;
+    }
+    .Sidebar{
+        width: 45px;
+        height: 150vh;
+    }
+    .logofilessidebar{
+        left: 0px;
+        width: 42px;
+    }
+    .logogithubsidebar{
+        left: 0px;
+        width: 42px;
+    }
+    .logocodesidebar{
+        left: 0px;
+        width: 42px;
+    }
+    .logosocialsidebar{
+        left: 0px;
+        width: 42px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .logoaccountsidebar{
+        top: 620px;
+        left: 0px;
+        width: 35px;
+    }
+    .logosettingsidebar{
+        top: 620px;
+        left: 0px;
+        width: 35px;
+    }
+    .Sidebar{
+        width: 38px;
+
+    }
+    .logofilessidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logogithubsidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logocodesidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logosocialsidebar{
+        left: 0px;
+        width: 35px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .logoaccountsidebar{
+        top: 780px;
+        left: 0px;
+        width: 35px;
+    }
+    .logosettingsidebar{
+        top: 780px;
+        left: 0px;
+        width: 35px;
+    }
+    .Sidebar{
+        width: 38px;
+
+    }
+    .logofilessidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logogithubsidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logocodesidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logosocialsidebar{
+        left: 0px;
+        width: 35px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .logoaccountsidebar{
+        top: 720px;
+        left: 0px;
+        width: 35px;
+    }
+    .logosettingsidebar{
+        top: 720px;
+        left: 0px;
+        width: 35px;
+    }
+    .Sidebar{
+        width: 38px;
+
+    }
+    .logofilessidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logogithubsidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logocodesidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logosocialsidebar{
+        left: 0px;
+        width: 35px;
+    }
+  }
+  @media only screen and (max-width: 700) {
+    .logoaccountsidebar{
+        top: 720px;
+        left: 0px;
+        width: 35px;
+    }
+    .logosettingsidebar{
+        top: 720px;
+        left: 0px;
+        width: 35px;
+    }
+    .Sidebar{
+        width: 38px;
+
+    }
+    .logofilessidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logogithubsidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logocodesidebar{
+        left: 0px;
+        width: 35px;
+    }
+    .logosocialsidebar{
+        left: 0px;
+        width: 35px;
+    }
+  }
